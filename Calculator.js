@@ -20,7 +20,6 @@ function cijfer(y) {
 		var num1 = som[som.length - 3];
 		var num2 = som[som.length - 1];
 		console.log(som);
-
 		var anns = "";
 
 		if (op == "-") {
@@ -46,21 +45,18 @@ function cijfer(y) {
 
 }
 
-var answer = document.getElementById('answer');
 
 function antwoord1(){
+	var answer = document.getElementById('answer');
 	answer = "";
 	var op = som[som.length - 1];
 
 	som.push(cyf);
 	cyf = "";
-
-
 var num1 = som[som.length - 3];
 var num2 = som[som.length - 1];
 
 var anns = "";
-
 if (op == "-") {
 	anns = num1 - num2;
 }else if (op == "+") {
@@ -70,8 +66,10 @@ if (op == "-") {
 }else if (op == "*") {
 	anns = num1 * num2;
 }
+
 console.log(anns);
-answer.innerHTML += anns;
+answer.innerHTML = anns;
 
 }
+
 
